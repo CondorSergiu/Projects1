@@ -1,0 +1,21 @@
+#oven {
+	background-image:url('images/oven.jpg');
+	background-size: contain;
+	width:398px;
+	height: 299px;	
+}
+
+#egg {
+	width:80px;
+	position: absolute;
+	top:147px;
+	left:53px;
+}
+
+#button {
+	width: 50px;
+	position: absolute;
+	top:234px;
+	left:206px;
+}
+#button:focus {outline:0;}

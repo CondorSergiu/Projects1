@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>The Oven</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="oven">	
+		<input id="button" class="uncooked" type="image" src="images/butonblue.png" />
+		<div class="wrapper">&nbsp;</div>
+	</div>
+	<img src="images/egg.png" id="egg">
+
+	<script>
+		$('#button').click(function() {
+			if($(this).hasClass('uncooked')) {
+				$(this).css({"top":"225px","left":"198px","width":"67px"}).attr('src','images/butonred.png').removeClass('uncooked').addClass('cooked');
+				$("#egg").attr('src','images/cooked.png').css({"top":"175px","width":"100px"});
+			}
+			else {
+				$(this).css({"top":"234px","left":"206px","width":"50px"}).attr('src','images/butonblue.png').removeClass('cooked').addClass('uncooked');
+				$("#egg").attr('src','images/egg.png').css({"top":"147px","width":"80px"});
+			}
+		});	 
+	</script>
+</body>
+</html>
